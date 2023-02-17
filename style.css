@@ -1,0 +1,133 @@
+
+
+body{ /* paramètres généraux */
+    background-color: #efeff3 ;
+    font-family: 'IBM Plex Sans', sans-serif;     
+    line-height: 1,5;
+}
+
+.home{ /* paramètres généraux */
+    background-color: #efeff3 ;/* couleur de fond , mettre url() après la couleur et le lien entre parenthèse pour avoir une image*/
+}
+
+.header{ /* bandeau */
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* position: sticky;
+    top: 8px; */
+    display: grid;
+    grid-template-columns: 2fr 20fr auto auto auto;
+    gap: 24px;
+    align-items:center;
+    margin-left: 60px;
+    margin-right: 60px;
+}   
+
+
+
+h4,h5,h6{ 
+    font-family: 'IBM Plex Sans', sans-serif;
+    /*background-color: blue ; couleur du bandeau  */
+    color: black; 
+    display: block; /* faire passer à la ligne */
+    font-weight: 900;
+    font-size: 40px;
+}
+
+h1{ 
+    font-family:'Josefin Slab', serif;
+    /*background-color: blue ; couleur du bandeau  */
+    color: black; 
+    display: block; /* faire passer à la ligne */
+    font-weight: 600;
+    font-size: 35px;
+}
+
+h2{ 
+    font-family:'Josefin Slab', serif;
+    /*background-color: blue ; couleur du bandeau  */
+    color: orange; 
+    display: grid; /* faire passer à la ligne */
+    font-weight: 900;
+    font-size: 50px;
+    justify-content: center;
+}
+
+h3{ 
+    font-family:'Josefin Slab', serif;
+    /*background-color: blue ; couleur du bandeau  */
+    color: #f49824; 
+    display: block;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+h4{ 
+    font-family: 'Josefin Slab', serif;
+    /*background-color: blue ; couleur du bandeau  */
+    color: black; 
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+p{ /* texte */
+    font-family:'IBM Plex Sans', sans-serif;
+    /*background-color: blue ; couleur du bandeau  */
+    color: black; 
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px); /* auto-fill = colones qui s'adaptent à la page */
+    gap: 20px;
+    /* row-gap: 0px; */
+    justify-content: center;
+}
+
+.projectspage{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* auto-fill = colones qui s'adaptent à la page */
+    gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+    color: black;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+    /*align-items: center;
+    margin-left: 60px;
+    margin-right: 60px; */
+}
+
+.suivis{
+        grid-area:1/1/-1/-1; 
+        /* raccourci pour grid-row et grid-column */
+}
+
+.description{
+    max-width: 450px;
+}
+
+.projectspage img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.el-large{
+    grid-column: 1/-1;
+}
+
+
+/* img{ 
+    display: block;  faire passer à la ligne 
+}
+.strong-alert{  catégorie de texte mis en avant
+    color: red;
+} */
+
